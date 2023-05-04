@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta itemprop="name" content="hexavik" />
+  <meta itemprop="description" content="A personal blog and portfolio website" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://hexavik.github.io/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://hexavik.github.io/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://hexavik.github.io/favicon-16x16.png"
+  />
+  <link
+    rel="shortcut icon"
+    href="https://hexavik.github.io/favicon.ico"
+  />
+  <link rel="stylesheet" href="https://hexavik.github.io/style.css"/>
+  
+  <title>Keywords in C programming</title>
+  
+
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://hexavik.github.io/rss.xml">
+  
+
+  <body id="page">
+
+	
+<header id="site-header" class="animated slideInUp faster">
+  <div class="hdr-wrapper section-inner">
+    <div class="hdr-left">
+      <div class="site-branding">
+        <a href="https:&#x2F;&#x2F;hexavik.github.io">hexavik</a>
+      </div>
+      <nav class="site-nav hide-in-mobile">
+            
+        
+        <a href="https://hexavik.github.io/posts">Posts</a>
+        
+        <a href="https://hexavik.github.io/about">About</a>
+        
+      </nav>
+    </div>
+    <div class="hdr-right hdr-icons">
+      <span class="hdr-social hide-in-mobile">
+        
+
+<a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;vikrantap&#x2F;" target="_blank" rel="noopener me"
+   title="linkedin">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;github.com&#x2F;hexavik" target="_blank" rel="noopener me"
+   title="github">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;hexavik.hashnode.dev&#x2F;" target="_blank" rel="noopener me"
+   title="hashnode">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;twitter.com&#x2F;hexavik" target="_blank" rel="noopener me"
+   title="twitter">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;www.instagram.com&#x2F;hexavik&#x2F;" target="_blank" rel="noopener me"
+   title="instagram">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+  
+</a>
+
+<a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCHZaTtortaHSYYRpHTt6D7Q?sub_confirmation=1" target="_blank" rel="noopener me"
+   title="youtube">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+  
+</a>
+
+<a href="mailto:vikrant_ap@hotmail.com" target="_blank" rel="noopener me"
+   title="email">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+  
+</a>
+
+
+      </span>
+      <button id="menu-btn" class="hdr-btn" title="Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="animated fast">
+  <ul>
+    
+    <li><a href="https://hexavik.github.io/posts">Posts</a></li>
+    
+    <li><a href="https://hexavik.github.io/about">About</a></li>
+    
+  </ul>
+</div>
+
+	
+	
+
+		
+<main class="site-main section-inner animated fadeIn faster">
+  <article class="thin">
+	<header class="post-header">
+	  <div class="post-meta">
+		
+		<span>Jul 04, 2022</span>
+		<small> - 
+<span class="reading-time" title="Estimated read time">
+  
+  16 min read
+  
+</span>
+</small>
+		
+            
+            <button id="toc-btn" class="hdr-btn desktop-only-ib">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    class="feather feather-list">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3" y2="6"></line>
+                    <line x1="3" y1="12" x2="3" y2="12"></line>
+                    <line x1="3" y1="18" x2="3" y2="18"></line>
+                </svg>
+            </button>
+		    
+	  </div>
+	  <h1>Keywords in C programming</h1>
+	</header>
+
+	<div class="content">
+        
+	  <p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1656957168574/bTIvQFO2V.png?w=1600&amp;h=840&amp;fit=crop&amp;crop=entropy&amp;auto=compress,format&amp;format=webp" alt="Banner" /></p>
+<p><strong>Keywords</strong> are the reserved words in every programming language, which are basic building blocks of program statements. Keywords are as essential as understanding the structure or syntax of the programming language. One cannot master the programming language without learning the proper use of keywords.</p>
+<p>In <strong>C programming</strong>, there are <strong>32</strong> keywords, which <em>must be written in lowercase</em> only. There are multiple resources on keywords, they are also mentioned in all books written on C Programming. But yet hard to remember all of them, thus, here I have written an easier way to explain each one of them and also organized them to help you to remember them.</p>
+<p>These 32 keywords are as follows alphabetically</p>
+<table><thead><tr><th style="text-align: center"></th><th style="text-align: center"></th><th style="text-align: center"></th><th style="text-align: center"></th></tr></thead><tbody>
+<tr><td style="text-align: center">auto</td><td style="text-align: center">double</td><td style="text-align: center">int</td><td style="text-align: center">struct</td></tr>
+<tr><td style="text-align: center">break</td><td style="text-align: center">enum</td><td style="text-align: center">long</td><td style="text-align: center">switch</td></tr>
+<tr><td style="text-align: center">case</td><td style="text-align: center">else</td><td style="text-align: center">register</td><td style="text-align: center">typedef</td></tr>
+<tr><td style="text-align: center">char</td><td style="text-align: center">extern</td><td style="text-align: center">return</td><td style="text-align: center">union</td></tr>
+<tr><td style="text-align: center">const</td><td style="text-align: center">float</td><td style="text-align: center">short</td><td style="text-align: center">unsigned</td></tr>
+<tr><td style="text-align: center">continue</td><td style="text-align: center">for</td><td style="text-align: center">signed</td><td style="text-align: center">void</td></tr>
+<tr><td style="text-align: center">default</td><td style="text-align: center">goto</td><td style="text-align: center">sizeof</td><td style="text-align: center">volatile</td></tr>
+<tr><td style="text-align: center">do</td><td style="text-align: center">if</td><td style="text-align: center">static</td><td style="text-align: center">while</td></tr>
+</tbody></table>
+<p><strong>YES</strong>, absolutely they are difficult to remember in this order, here is how I organized these keywords to remember them</p>
+<h3 id="fundamental-datatypes">Fundamental Datatypes</h3>
+<p>Starting with five fundamental datatypes, the first program we write is <code>Hello World!</code>, in which we have seen <code>void main()</code> (or <code>int main()</code>) as our first function, here, <code>void</code> (or <code>int</code>) is called a function return type, which can be also declared along with the variables as their datatype.</p>
+<p>All these keywords follow the same format</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span>    datatype variable;
+</span></code></pre>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#void">void</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#char">char</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#int">int</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#float">float</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#double">double</a></li>
+</ul>
+<h3 id="type-modifiers-qualifiers-and-size">Type Modifiers, Qualifiers, and Size</h3>
+<p>allows modifying the range and size of the datatypes</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#short-long-signed-and-unsigned">short</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#short-long-signed-and-unsigned">long</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#short-long-signed-and-unsigned">signed</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#short-long-signed-and-unsigned">unsigned</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#sizeof">sizeof</a></li>
+</ul>
+<h3 id="basic-collections">Basic Collections</h3>
+<p>the primitive data structures, yet the collection of the variables</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#struct">struct</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#union">union</a></li>
+</ul>
+<h3 id="user-defined-declarations">User-defined declarations</h3>
+<p>allows user to define their own declarations</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#enum">enum</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#typedef">typedef</a></li>
+</ul>
+<h3 id="fucntion-return">Fucntion Return</h3>
+<p>all these data types, collections, and type defines are returned by</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#return">return</a></li>
+</ul>
+<h3 id="storage-class-specifiers">Storage class specifiers</h3>
+<p>allows declaring explicitly the scope and lifetime of variables</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#auto">auto</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#static">static</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#extern">extern</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#register">register</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#const">const</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#volatile">volatile</a></li>
+</ul>
+<h3 id="conditional-blocks">Conditional blocks</h3>
+<p>allows creating branches in code flow that are directed by conditions</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#if-and-else">if</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#if-and-else">else</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#switch-case-and-default">switch</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#switch-case-and-default">case</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#switch-case-and-default">default</a></li>
+</ul>
+<h3 id="jumps">Jumps</h3>
+<p>allows to jump out of the loop or jump back to the loop by skipping further statements inside the loop</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#break-goto-and-continue">break</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#break-goto-and-continue">goto</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#break-goto-and-continue">continue</a></li>
+</ul>
+<h3 id="loops">Loops</h3>
+<p>allows execution of the block of code several times according to the condition given in the loop. In simple words, executing the same code multiple times is called a loop</p>
+<ul>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#while">while</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#do">do</a></li>
+<li><a href="https://hexavik.github.io/posts/keywords-in-c-programming/#for">for</a></li>
+</ul>
+<hr />
+<p>Now, let's go through them one by one</p>
+<h2 id="void">void</h2>
+<ul>
+<li>It means nothing or no value</li>
+<li>Often used to specify the type of a function that doesn't return any value to the calling function</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">fun</span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">a</span><span>) {
+</span><span>    </span><span style="color:#65737e;">// returns no value
+</span><span>    </span><span style="color:#65737e;">// or returns nothing
+</span><span>}
+</span></code></pre>
+<ul>
+<li>We cannot declare a variable as <code>void</code>, as it will throw an error</li>
+<li>Can also be used as a function parameter at the time of declaration, when there is no argument passed to a function</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">fun</span><span>(</span><span style="color:#b48ead;">void</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> a = </span><span style="color:#d08770;">5</span><span>;
+</span><span>    </span><span style="color:#b48ead;">return </span><span>(a + a);
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>(</span><span style="color:#b48ead;">void</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> x = </span><span style="color:#bf616a;">fun</span><span>();
+</span><span>}
+</span></code></pre>
+<hr />
+<h2 id="char">char</h2>
+<ul>
+<li>Single character datatype, which consumes 8-bits (1-byte) only</li>
+<li>Ranging from -128 to 127 when <code>signed</code> and from 0 to 255 when <code>unsigned</code></li>
+<li>All characters in an <strong>ASCII</strong> table can be displayed with this datatype</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">char</span><span> alpha = `A`
+</span></code></pre>
+<ul>
+<li>Can be assigned integer values ranging from -128 to 127 <code>(signed)</code> or from 0 to 255 <code>(unsigned)</code>, stores respective <strong>ASCII character</strong></li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">char</span><span> alpha = </span><span style="color:#d08770;">23</span><span>;
+</span><span style="color:#b48ead;">unsigned char</span><span> beta = </span><span style="color:#d08770;">200</span><span>;
+</span><span>
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#d08770;">%c</span><span style="color:#a3be8c;">, </span><span style="color:#d08770;">%c</span><span>&quot;, alpha, beta);
+</span></code></pre>
+<hr />
+<h2 id="int">int</h2>
+<ul>
+<li>Used to declare the whole number</li>
+<li>Consumes 16-bits (2 bytes) on 16-bit processors/machines or 32-bits (4 bytes) on 32-bit processors/machines</li>
+<li>Ranging from -32768 to 32767 when <code>signed</code> and from 0 to 65535 when <code>unsigned</code></li>
+<li>Range can be extended, which is explained later</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">56</span><span>;
+</span><span style="color:#b48ead;">unsigned int</span><span> j = </span><span style="color:#d08770;">51983</span><span>;
+</span></code></pre>
+<ul>
+<li>Can be assigned character values as well, stores respective <strong>ASCII number</strong></li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int</span><span> ch = &#39;</span><span style="color:#a3be8c;">E</span><span>&#39;;
+</span><span>
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#d08770;">%d</span><span>&quot;, ch);
+</span></code></pre>
+<hr />
+<h2 id="float">float</h2>
+<ul>
+<li>Used to declare floating-point (or real) number</li>
+<li>Consumes 32-bits (4 bytes) with 6 digits of precision</li>
+<li>Ranging from 3.4E-38 to 3.4E+38</li>
+<li><code>signed</code> by default, <code>unsigned</code> is not permitted</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">float</span><span> num = </span><span style="color:#d08770;">34.67153982</span><span>;
+</span><span>
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#d08770;">%f</span><span>&quot;, num);
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">34.671539
+</span></code></pre>
+<hr />
+<h2 id="double">double</h2>
+<ul>
+<li>The extended version of <code>float</code>, also denoted as <strong>double precision</strong> numbers</li>
+<li>Consumes 64-bits (8 bytes) with 14 digits of precision</li>
+<li>Ranging from 1.7E-308 to 1.7E+308</li>
+<li>Range can be extended further, which is explained later</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">double</span><span> extNum = </span><span style="color:#d08770;">1467.7987543022</span><span>;
+</span><span>
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#d08770;">%lf</span><span style="color:#96b5b4;">\n</span><span>&quot;, extNum);    </span><span style="color:#65737e;">// print value normally
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#d08770;">%.12lf</span><span style="color:#96b5b4;">\n</span><span>&quot;, extNum); </span><span style="color:#65737e;">// force to print value for 12 decimal places
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">1467.798754
+</span><span style="color:#bf616a;">1476.798754302200
+</span></code></pre>
+<hr />
+<h2 id="short-long-signed-and-unsigned">short, long, signed, and unsigned</h2>
+<ul>
+<li>Called as a qualifier, which can be assigned to <code>int</code>, <code>char</code>, or <code>double</code> datatypes as a type modifiers</li>
+<li><code>signed</code> uses one bit (MSB) for the sign (+/-) and other remaining bits for the magnitude of the number, whereas <code>unsigned</code> uses all bits for the magnitude of the number</li>
+<li><code>signed</code> is the default to all data types, there is no need to specify it, whereas <code>unsigned</code> can be used for <code>int</code> and <code>char</code> only</li>
+<li><code>short</code> and <code>long</code> are used to specify the storage of a variable datatype, where <code>short</code> can be used for <code>int</code> to specify 16-bit (2 bytes) integers</li>
+<li><code>long</code> extends the range and storage capacity further for <code>int</code> and <code>double</code> datatypes, where <code>long int</code> consumes 64-bit (8 bytes) on all processors/machines, ranging from -2147483648 to 2147483647</li>
+<li><code>long double</code> consumes 80-bits (10 bytes) <em>(some machines consume 128-bits (16 bytes))</em> along with extending the precision further, ranging from 3.4E-4932 to 3.4E+4932</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">char                </span><span style="color:#65737e;">// signed char
+</span><span style="color:#b48ead;">unsigned char
+</span><span>
+</span><span style="color:#b48ead;">int                 </span><span style="color:#65737e;">// signed int
+</span><span style="color:#b48ead;">unsigned int
+</span><span style="color:#b48ead;">short int           </span><span style="color:#65737e;">// signed short int
+</span><span style="color:#b48ead;">unsigned short int
+</span><span style="color:#b48ead;">long int            </span><span style="color:#65737e;">// signed long int
+</span><span style="color:#b48ead;">unsigned long int
+</span><span>
+</span><span style="color:#b48ead;">float
+</span><span style="color:#b48ead;">double
+</span><span style="color:#b48ead;">long double
+</span></code></pre>
+<hr />
+<h2 id="struct">struct</h2>
+<ul>
+<li>As we know Array cannot be defined with different datatypes inside it, so structures are created to resolve the limitation of grouping variables with different data types together</li>
+<li>Structures are the constructed datatypes in C, their general syntax is as follows</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">struct </span><span>tag_name {
+</span><span>    datatype member1;
+</span><span>    datatype member2;
+</span><span>    ...
+</span><span>    datatype membern;
+</span><span>};
+</span></code></pre>
+<ul>
+<li>The keyword <code>struct</code> defines the structure format</li>
+<li>The <code>tag_name</code> can be used to declare structure variables of its type, later in the program</li>
+<li>Variables defined inside the structure are <code>structure elements</code> or <code>members</code></li>
+<li>The structure format is called a <code>template</code>, note that it has not declared any variables</li>
+<li>Even if the entire definition is considered as a <code>statement</code>, each member is declared independently for its name and type in a separate statement inside the template</li>
+<li>The following example will help us to understand this better</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span>book: </span><span style="color:#bf616a;">author</span><span>(</span><span style="color:#b48ead;">char</span><span>), </span><span style="color:#bf616a;">title</span><span>(</span><span style="color:#b48ead;">char</span><span>), </span><span style="color:#bf616a;">price</span><span>(</span><span style="color:#b48ead;">float</span><span>), </span><span style="color:#bf616a;">year</span><span>(</span><span style="color:#b48ead;">int</span><span>)
+</span><span>
+</span><span style="color:#b48ead;">struct </span><span>book {
+</span><span>    </span><span style="color:#b48ead;">char</span><span> author[</span><span style="color:#d08770;">20</span><span>];
+</span><span>    </span><span style="color:#b48ead;">char</span><span> title[</span><span style="color:#d08770;">15</span><span>];
+</span><span>    </span><span style="color:#b48ead;">float</span><span> price;
+</span><span>    </span><span style="color:#b48ead;">int</span><span> year;
+</span><span>};
+</span></code></pre>
+<ul>
+<li><strong>I have written the detailed guide on Structures <a href="https://hexavik.github.io/posts/structures-in-c-programming/">here</a></strong></li>
+</ul>
+<hr />
+<h2 id="union">union</h2>
+<ul>
+<li>Union is the same as Structures, hence, follows the same syntax. However, there is a major distinction between them in terms of storage.</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">union </span><span>tag_name {
+</span><span>    datatype member1;
+</span><span>    datatype member2;
+</span><span>    ...
+</span><span>    datatype membern;
+</span><span>};
+</span></code></pre>
+<ul>
+<li>Each member in the structure has its own storage location, where all the members of a union use the same memory location</li>
+<li>It can handle only one member at a time, as only one memory location is allocated to the union</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">struct </span><span>book_struct {
+</span><span>    </span><span style="color:#b48ead;">char</span><span> author[</span><span style="color:#d08770;">20</span><span>];
+</span><span>    </span><span style="color:#b48ead;">char</span><span> title[</span><span style="color:#d08770;">15</span><span>];
+</span><span>    </span><span style="color:#b48ead;">float</span><span> price;
+</span><span>    </span><span style="color:#b48ead;">int</span><span> year;
+</span><span>} var_book_struct;
+</span><span>
+</span><span style="color:#b48ead;">union </span><span>book_union {
+</span><span>    </span><span style="color:#b48ead;">char</span><span> author[</span><span style="color:#d08770;">20</span><span>];
+</span><span>    </span><span style="color:#b48ead;">char</span><span> title[</span><span style="color:#d08770;">15</span><span>];
+</span><span>    </span><span style="color:#b48ead;">float</span><span> price;
+</span><span>    </span><span style="color:#b48ead;">int</span><span> year;
+</span><span>} var_book_union;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">Size of Structure: </span><span style="color:#d08770;">%ld</span><span style="color:#96b5b4;">\n</span><span style="color:#a3be8c;">Size of Union: </span><span style="color:#d08770;">%ld</span><span style="color:#96b5b4;">\n</span><span>&quot;, 
+</span><span>            sizeof(var_book_struct), sizeof(var_book_union));
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">Size</span><span> of Structure: 44
+</span><span style="color:#bf616a;">Size</span><span> of Union: 20
+</span></code></pre>
+<ul>
+<li>The detailed guide on Unions shall be uploaded along with structures, I shall update the link here</li>
+</ul>
+<hr />
+<h2 id="enum">enum</h2>
+<ul>
+<li>User-defined data type called enumerated datatype</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">enum </span><span>identifier {value1, vlaue2, ..., valuen};
+</span></code></pre>
+<ul>
+<li>Can be used to declare variables that can have values enclosed within the braces known as <code>enumeration constants</code></li>
+<li><code>enumeration constants</code> has a default data type of <code>int</code></li>
+<li><code>identifier</code> is a user-defined enumerated datatype and <code>value1</code>, <code>value2</code>, <code>...</code>, and <code>valuen</code> are <code>enumeration constants</code></li>
+<li>The default value assigned to the <code>enumeration constants</code> starts from <code>0 (zero)</code> if not specified and follows the order</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">enum </span><span>days {
+</span><span>    sunday,     </span><span style="color:#65737e;">// value = 0
+</span><span>    monday,     </span><span style="color:#65737e;">// value = 1
+</span><span>    tuesday,    </span><span style="color:#65737e;">// value = 2
+</span><span>    wednesday,  </span><span style="color:#65737e;">// value = 3
+</span><span>    thursday,   </span><span style="color:#65737e;">// value = 4
+</span><span>    friday,     </span><span style="color:#65737e;">// value = 5
+</span><span>    saturday,   </span><span style="color:#65737e;">// value = 6
+</span><span>};
+</span><span>
+</span><span style="color:#65737e;">// enumerated constants can be assigned 
+</span><span style="color:#65737e;">// directly to the integer variables
+</span><span style="color:#b48ead;">int</span><span> day = tuesday;
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">day: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, day);
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">day:</span><span> 2
+</span></code></pre>
+<ul>
+<li>After defining <code>enum</code> we can declare the variables of this new datatype</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">enum </span><span>days {
+</span><span>    sunday,     </span><span style="color:#65737e;">// value = 0
+</span><span>    monday,     </span><span style="color:#65737e;">// value = 1
+</span><span>    tuesday,    </span><span style="color:#65737e;">// value = 2
+</span><span>    wednesday,  </span><span style="color:#65737e;">// value = 3
+</span><span>    thursday,   </span><span style="color:#65737e;">// value = 4
+</span><span>    friday,     </span><span style="color:#65737e;">// value = 5
+</span><span>    saturday,   </span><span style="color:#65737e;">// value = 6
+</span><span>};
+</span><span>
+</span><span style="color:#65737e;">// declare the variable with the enumerated datatype
+</span><span style="color:#b48ead;">enum</span><span> days weekend = </span><span style="color:#d08770;">6</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">if </span><span>(weekend == saturday)
+</span><span>    </span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">it&#39;s the weekend!</span><span style="color:#96b5b4;">\n</span><span>&quot;);
+</span><span>
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">it</span><span>&#39;</span><span style="color:#a3be8c;">s the weekend!
+</span></code></pre>
+<ul>
+<li>However, values can be assigned manually to the enumeration constants</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">enum </span><span>days {
+</span><span>    monday = </span><span style="color:#d08770;">1</span><span>,     </span><span style="color:#65737e;">// value = 1
+</span><span>    tuesday,        </span><span style="color:#65737e;">// value = 2
+</span><span>    wednesday,      </span><span style="color:#65737e;">// value = 3
+</span><span>    thursday,       </span><span style="color:#65737e;">// value = 4
+</span><span>    friday,         </span><span style="color:#65737e;">// value = 5
+</span><span>    saturday,       </span><span style="color:#65737e;">// value = 6
+</span><span>    sunday = </span><span style="color:#d08770;">0</span><span>,     </span><span style="color:#65737e;">// value = 0
+</span><span>};
+</span><span>
+</span><span style="color:#bf616a;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">Day: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, sunday);
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">Day:</span><span> 0
+</span></code></pre>
+<ul>
+<li>The definition and declaration of variables can be combined into one statement</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">enum </span><span>days {
+</span><span>    sunday,     </span><span style="color:#65737e;">// value = 0
+</span><span>    monday,     </span><span style="color:#65737e;">// value = 1
+</span><span>    tuesday,    </span><span style="color:#65737e;">// value = 2
+</span><span>    wednesday,  </span><span style="color:#65737e;">// value = 3
+</span><span>    thursday,   </span><span style="color:#65737e;">// value = 4
+</span><span>    friday,     </span><span style="color:#65737e;">// value = 5
+</span><span>    saturday,   </span><span style="color:#65737e;">// value = 6
+</span><span>} weekend = </span><span style="color:#d08770;">6</span><span>, weekbeg; </span><span style="color:#65737e;">// enumerated variables
+</span><span>
+</span><span>weekbeg = monday;    </span><span style="color:#65737e;">// value can be assigned individually
+</span></code></pre>
+<ul>
+<li><code>enums</code> are better than <code>#define</code> macros, as they are type-safe and define a syntactical element</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#65737e;">// don&#39;t prefer this
+</span><span style="color:#b48ead;">#define </span><span>success </span><span style="color:#d08770;">1
+</span><span style="color:#b48ead;">#define </span><span>failure </span><span style="color:#d08770;">0
+</span><span>
+</span><span style="color:#65737e;">// prefer this
+</span><span style="color:#b48ead;">enum </span><span>bools {
+</span><span>    failure,    </span><span style="color:#65737e;">// value 0
+</span><span>    success,    </span><span style="color:#65737e;">// value 1
+</span><span>};
+</span></code></pre>
+<hr />
+<h2 id="typedef">typedef</h2>
+<ul>
+<li>Allows users to define their own datatype which can be declared with the existing datatype and later can be used to declare the variables with the defined type</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">typedef</span><span> type identifier;
+</span></code></pre>
+<ul>
+<li>Type refers to an existing datatype and <code>identifier</code> refers to the new name given to the datatype.</li>
+<li>Creates the reference to an existing datatype, doesn't create a new type</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#65737e;">// declare color as a new datatype to easily understand
+</span><span style="color:#b48ead;">typedef char </span><span>color;
+</span><span>
+</span><span style="color:#65737e;">// declare variables of datatype color
+</span><span>color red = &#39;</span><span style="color:#a3be8c;">r</span><span>&#39;, green;
+</span><span>green = &#39;</span><span style="color:#a3be8c;">g</span><span>&#39;;
+</span></code></pre>
+<ul>
+<li>Advantageous in creating some new datatype names for easiness in readability</li>
+<li>Can also be used for <code>struct</code> and <code>union</code>, which helps to write more organized code</li>
+</ul>
+<hr />
+<h2 id="return">return</h2>
+<ul>
+<li>Specifies the return value of the function with the return type</li>
+<li>Can also be used to terminate the function in conditional statements</li>
+<li>Optional for <code>void</code> functions</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">fun</span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">x</span><span>) {
+</span><span>    </span><span style="color:#65737e;">// statements
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return</span><span>; </span><span style="color:#65737e;">// optional
+</span><span>}
+</span></code></pre>
+<p>or</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">fun</span><span>(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">x</span><span>) {
+</span><span>    </span><span style="color:#65737e;">// statements
+</span><span>}
+</span></code></pre>
+<hr />
+<h2 id="sizeof">sizeof</h2>
+<ul>
+<li>Evaluates the size of a variable or a constant</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span>sizeof(variable/</span><span style="color:#b48ead;">const</span><span>/type);
+</span></code></pre>
+<ul>
+<li>It is also applicable to the existing data types as well as user-defined</li>
+<li>Returns the value which indicates the total bytes consumed by a variable or a constant</li>
+<li>The return type is generally <code>long unsigned int</code>, which can be different in different processors/machines</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">stdio.h</span><span>&gt;
+</span><span>
+</span><span style="color:#b48ead;">enum </span><span>month {
+</span><span>    jan,
+</span><span>    feb,
+</span><span>};
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">float</span><span> fl = </span><span style="color:#d08770;">3.45</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%u</span><span style="color:#a3be8c;"> bytes</span><span style="color:#96b5b4;">\n</span><span>&quot;, sizeof(</span><span style="color:#b48ead;">char</span><span>));   </span><span style="color:#65737e;">// read size of a datatype
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%ld</span><span style="color:#a3be8c;"> bytes</span><span style="color:#96b5b4;">\n</span><span>&quot;, sizeof(jan));   </span><span style="color:#65737e;">// read size of a constant
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%ld</span><span style="color:#a3be8c;"> bytes</span><span style="color:#96b5b4;">\n</span><span>&quot;, sizeof(fl));    </span><span style="color:#65737e;">// read size of a variable
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">1</span><span> bytes
+</span><span style="color:#bf616a;">4</span><span> bytes
+</span><span style="color:#bf616a;">4</span><span> bytes
+</span></code></pre>
+<hr />
+<h2 id="auto">auto</h2>
+<ul>
+<li>Used to declare a local variable within a function, which has its scope within a function</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">auto</span><span> type variable;
+</span></code></pre>
+<ul>
+<li><code>auto</code> is assigned to all local variables by default, without specifying it</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">fun</span><span>(</span><span style="color:#b48ead;">char </span><span style="color:#bf616a;">ch</span><span>) {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> x;  </span><span style="color:#65737e;">// storage class auto assigned automatically or by default
+</span><span>    </span><span style="color:#65737e;">// memory assigned to x automatically
+</span><span>    x = (</span><span style="color:#b48ead;">int </span><span>)ch;
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return</span><span> x;
+</span><span>    </span><span style="color:#65737e;">// memory destroyed assigned to x as its scope has ended
+</span><span>}
+</span></code></pre>
+<ul>
+<li>A variable with <code>auto</code> keyword initialized to undefined or garbage value, until and unless assigned manually</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">fun</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">auto int</span><span> x;
+</span><span>    
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    </span><span style="color:#bf616a;">fun</span><span>();
+</span><span>    
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">x:</span><span> 22047 (garbage value)
+</span></code></pre>
+<hr />
+<h2 id="static">static</h2>
+<ul>
+<li>Declares a variable, which remains in the memory until the end of the program</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">static</span><span> type variable = value;
+</span></code></pre>
+<ul>
+<li><code>static</code> variables are automatically initialized to zero</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">void </span><span style="color:#8fa1b3;">fun</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">static int</span><span> x;   </span><span style="color:#65737e;">// automatically assigned value 0
+</span><span>    
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    </span><span style="color:#bf616a;">fun</span><span>();
+</span><span>    
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">x:</span><span> 0
+</span></code></pre>
+<ul>
+<li>A local variable with <code>static</code> keyword exists and retains its value even after the control is transferred to the calling function</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">fun</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">static int</span><span> count = </span><span style="color:#d08770;">0</span><span>;
+</span><span>    count++;    </span><span style="color:#65737e;">// increment the variable
+</span><span>    
+</span><span>    </span><span style="color:#b48ead;">return</span><span> count;
+</span><span>    </span><span style="color:#65737e;">// memory assigned to static variable not destroyed
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%d </span><span>&quot;, </span><span style="color:#bf616a;">fun</span><span>());
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%d </span><span>&quot;, </span><span style="color:#bf616a;">fun</span><span>());
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">1</span><span> 2
+</span></code></pre>
+<ul>
+<li><code>static</code> keyword can also be assigned to the user-defined functions, to limit their access within the file, as functions are by default global</li>
+<li>This can be also useful to reuse the same function name in other files</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#65737e;">// file_1.c
+</span><span style="color:#b48ead;">static void </span><span style="color:#8fa1b3;">display</span><span>(</span><span style="color:#b48ead;">void</span><span>) {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">displaying display function</span><span style="color:#96b5b4;">\n</span><span>&quot;);
+</span><span>}
+</span><span>
+</span><span style="color:#65737e;">// file_2.c
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#bf616a;">display</span><span>();
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>The above code will throw an error of <code>undefined reference to display</code></li>
+<li>Assigning <code>static</code> keyword to structure elements is not permitted</li>
+</ul>
+<hr />
+<h2 id="extern">extern</h2>
+<ul>
+<li>Allows extending the visibility of a variable or a function, this means a variable must be defined somewhere in the program, and declaring it as <code>extern</code> will make it global</li>
+<li>When <code>extern</code> is used with a variable, it's only declared, not defined</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int</span><span> x;          </span><span style="color:#65737e;">// declaration and definition, memory allocated
+</span><span style="color:#b48ead;">extern int</span><span> x;   </span><span style="color:#65737e;">// declaration only, memory not allocated
+</span></code></pre>
+<ul>
+<li>Generally used when a particular file needs to access a variable from another file</li>
+<li>To declare a variable as an extern it must be defined somewhere in the program</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">stdio.h</span><span>&gt;
+</span><span>
+</span><span style="color:#b48ead;">extern int</span><span> x;   </span><span style="color:#65737e;">// declared x as extern but no memory allocated
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#65737e;">// display x
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">undefined</span><span> reference to `</span><span style="color:#bf616a;">x</span><span>&#39;
+</span></code></pre>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">#include </span><span>&lt;</span><span style="color:#a3be8c;">stdio.h</span><span>&gt;
+</span><span>
+</span><span style="color:#b48ead;">extern int</span><span> x;   </span><span style="color:#65737e;">// declared x as extern but no memory allocated
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> x = </span><span style="color:#d08770;">45</span><span>; </span><span style="color:#65737e;">// declared and defined, memory allocated
+</span><span>    </span><span style="color:#65737e;">// display x
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">x:</span><span> 45
+</span></code></pre>
+<ul>
+<li>As an exception, declaring an <code>extern</code> variable with initialization is permitted, yet it throws a warning and is not recommended</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">extern int</span><span> x = </span><span style="color:#d08770;">45</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">warning:</span><span> ‘x’ initialized and declared ‘extern’
+</span><span> | </span><span style="color:#bf616a;">extern</span><span> int x = 45;
+</span><span> |            </span><span style="color:#bf616a;">^
+</span><span style="color:#bf616a;">x:</span><span> 45
+</span></code></pre>
+<ul>
+<li>Declaring <code>extern</code> keyword without defining, accessing, or initializing it also works fine</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">extern int</span><span> x;   </span><span style="color:#65737e;">// only declaration, no memory allocated
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">Hello World!</span><span>&quot;);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">Hello</span><span> World!
+</span></code></pre>
+<ul>
+<li>Since the functions are global by default, the use of extern keyword for functions doesn't needed</li>
+</ul>
+<hr />
+<h2 id="register">register</h2>
+<ul>
+<li>Allows storing variables inside CPU register instead of memory</li>
+<li>Variables that are used frequently can be stored inside the register so that they can be accessed faster</li>
+<li>Register variables have scope until execution of block they are declared inside</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">register int</span><span> x = </span><span style="color:#d08770;">10</span><span>;    </span><span style="color:#65737e;">// declared and defined inside register with value 10
+</span><span>
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">x:</span><span> 10
+</span></code></pre>
+<ul>
+<li>Using <code>time</code> command in Linux for the programs without and with register variable shows the difference between execution time</li>
+</ul>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">without</span><span> register keyword
+</span><span style="color:#bf616a;">$</span><span> time ./test_register_variable
+</span><span style="color:#bf616a;">x:</span><span> 10
+</span><span>
+</span><span style="color:#bf616a;">real</span><span>    0m0.001s
+</span><span style="color:#bf616a;">user</span><span>    0m0.002s
+</span><span style="color:#bf616a;">sys</span><span>     0m0.000s
+</span><span>
+</span><span>
+</span><span style="color:#bf616a;">with</span><span> register keyword
+</span><span style="color:#bf616a;">$</span><span> time ./test_register_variable
+</span><span style="color:#bf616a;">x:</span><span> 10
+</span><span>
+</span><span style="color:#bf616a;">real</span><span>    0m0.001s
+</span><span style="color:#bf616a;">user</span><span>    0m0.001s
+</span><span style="color:#bf616a;">sys</span><span>     0m0.000s
+</span></code></pre>
+<ul>
+<li>Register variables cannot be declared globally</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">register int</span><span> x = </span><span style="color:#d08770;">10</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">x: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, x);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">error:</span><span> register name not specified for ‘x’
+</span></code></pre>
+<ul>
+<li>Register variables are initialized to a garbage value by default</li>
+<li>Most modern compilers store frequently used variables as register automatically, so even if you don't create any register variable, compilers will do it by themselves</li>
+</ul>
+<hr />
+<h2 id="const">const</h2>
+<ul>
+<li>Allows declaring a variable as a constant, this means the value of the variable will not be changed throughout the program execution</li>
+<li>Can be written even after the datatype</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">const int</span><span> a = </span><span style="color:#d08770;">5</span><span>;    </span><span style="color:#65737e;">// allowed
+</span><span style="color:#b48ead;">int const</span><span> a = </span><span style="color:#d08770;">5</span><span>;    </span><span style="color:#65737e;">// allowed
+</span></code></pre>
+<ul>
+<li>If we try to change the value manually it will throw compile error, this is also applicable to value modification by any other function or operations like increment/decrement</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">const int</span><span> a = </span><span style="color:#d08770;">5</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    a = </span><span style="color:#d08770;">10</span><span>; </span><span style="color:#65737e;">// or a++ or --a
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">error:</span><span> assignment of read-only variable ‘a’
+</span></code></pre>
+<ul>
+<li>Assigned value <code>0</code> (zero) as default if not initialized manually at the time of declaration</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">const int</span><span> a;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">a: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, a);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">a:</span><span> 0
+</span></code></pre>
+<ul>
+<li>However, the pointing value can be modified and assigned to a constant pointer</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int</span><span> a = </span><span style="color:#d08770;">10</span><span>; </span><span style="color:#65737e;">// non-constant integer variable
+</span><span style="color:#b48ead;">const int </span><span>* ptr = &amp;a;   </span><span style="color:#65737e;">// pointer is assigned address of a
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">*ptr: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, *ptr);
+</span><span>    ++a;
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">*ptr: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, *ptr);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">*ptr:</span><span> 10
+</span><span style="color:#bf616a;">*ptr:</span><span> 11
+</span></code></pre>
+<ul>
+<li>In the case of pointer to constant works little different</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">int</span><span> a = </span><span style="color:#d08770;">10</span><span>;
+</span><span style="color:#b48ead;">int</span><span> b = </span><span style="color:#d08770;">20</span><span>;
+</span><span style="color:#b48ead;">int </span><span>* </span><span style="color:#b48ead;">const</span><span> ptr = &amp;a;
+</span><span>
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span>()
+</span><span>{
+</span><span>    *ptr = b;
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">*ptr: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, *ptr);
+</span><span>    ++a;
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">*ptr: </span><span style="color:#d08770;">%d</span><span style="color:#96b5b4;">\n</span><span>&quot;, *ptr);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">*ptr:</span><span> 20
+</span><span style="color:#bf616a;">*ptr:</span><span> 21
+</span></code></pre>
+<hr />
+<h2 id="volatile">volatile</h2>
+<p>The volatile keyword is used for creating volatile objects. A volatile object can be modified in an unspecified way by the hardware.</p>
+<ul>
+<li>Used to tell explicitly the compiler that a variable's value may be changed at any time by some external sources (from outside the program)</li>
+<li>As the value can be modified of a volatile variable even by its own program, we can add <code>const</code> keyword to keep the value unchanged by its own program but can be altered by some other process/external program</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">const volatile</span><span> number;
+</span></code></pre>
+<p>Here, a number is a volatile object.</p>
+<p>Since a number is a constant, the program cannot change it. However, hardware can change it since it is a volatile object.</p>
+<hr />
+<h2 id="if-and-else">if and else</h2>
+<ul>
+<li>Everyone's favorite, a powerful decision-making statement and used to control the flow of execution of statements</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">if </span><span>(expression)
+</span></code></pre>
+<ul>
+<li><code>if</code> allows the computer to evaluate the expression first and then, depending on whether the value of the expression (relation or condition) is <code>true (or non-zero)</code> or <code>false (zero)</code>, it transfers control to a particular statement</li>
+<li><code>else</code> is the keyword used along with <code>if</code> when the mentioned expression doesn't satisfy then there should be something for the <code>false</code> condition of it</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">if </span><span>(</span><span style="color:#b48ead;">if</span><span> this is </span><span style="color:#d08770;">true</span><span>) {
+</span><span>    </span><span style="color:#65737e;">// true block statements
+</span><span>} </span><span style="color:#b48ead;">else </span><span>{
+</span><span>    </span><span style="color:#65737e;">// false block statements
+</span><span>}
+</span></code></pre>
+<ul>
+<li>One cannot write <code>else</code> without pairing <code>if</code>, or before <code>if</code></li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">if </span><span>(i == </span><span style="color:#d08770;">1</span><span>) {
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">i is 1</span><span>&quot;);
+</span><span>} </span><span style="color:#b48ead;">else </span><span>{
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">i is not 1</span><span>&quot;);
+</span><span>}
+</span></code></pre>
+<p>If the value of <code>i</code> is other than 1, the output will be:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">i</span><span> is not 1
+</span></code></pre>
+<ul>
+<li>
+<p>Can be implemented in the following forms</p>
+<ol>
+<li>Simple <code>if</code> statement</li>
+<li>Nested <code>if</code> statement</li>
+<li><code>if</code> ladder</li>
+<li><code>if ... else</code> statement</li>
+<li>Nested <code>if ... else</code> statement</li>
+<li><code>if ... else</code> ladder</li>
+</ol>
+</li>
+<li>
+<p>De Morgan's rule is applicable to <code>if</code> expressions</p>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">if </span><span>(!x)     </span><span style="color:#65737e;">// if x is false then execute the statement
+</span><span>    true
+</span></code></pre>
+<hr />
+<h2 id="switch-case-and-default">switch, case, and default</h2>
+<p>The switch and case statement is used when a block of statements has to be executed among many blocks.</p>
+<ul>
+<li>Sometimes complexity of <code>if</code> ladder increases dramatically when the number of alternatives increases, in terms of following and reading the program. Thus, the <code>switch</code> statement makes it more accessible.</li>
+<li><code>switch</code> statement tests the value of a given variable (or expression) against a list of case values and when a match is found, a block of statements associated with that case is executed</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">switch </span><span>(expression) {
+</span><span>    </span><span style="color:#b48ead;">case</span><span> value1:
+</span><span>        </span><span style="color:#65737e;">// statement block 1
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>    </span><span style="color:#b48ead;">case</span><span> value2:
+</span><span>        </span><span style="color:#65737e;">// statement block 2
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>    ...
+</span><span>    ...
+</span><span>    </span><span style="color:#b48ead;">default</span><span>:
+</span><span>        </span><span style="color:#65737e;">// default statement block
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>The expression must be an integer or characters, whereas <code>value1</code>, <code>value2</code>, <code>...</code> are constants or constant expressions known as <code>case</code> labels (must be unique)</li>
+<li>The <code>default</code> is optional, when present, it will be executed if the value of the expression does not match with any of the case values.</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">switch </span><span>(expression) {
+</span><span>    </span><span style="color:#b48ead;">case </span><span>&#39;</span><span style="color:#a3be8c;">1</span><span>&#39;:
+</span><span>        </span><span style="color:#65737e;">// some statements to execute when 1
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>    </span><span style="color:#b48ead;">case</span><span> `</span><span style="color:#d08770;">5</span><span>`:
+</span><span>        </span><span style="color:#65737e;">// some statements to execute when 5
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>    </span><span style="color:#b48ead;">default</span><span>:
+</span><span>        </span><span style="color:#65737e;">// some statements to execute when default
+</span><span>}
+</span></code></pre>
+<ul>
+<li>Expression must be an integral type</li>
+<li><code>break</code> statement transfers the control out of the <code>switch</code> block</li>
+<li>Nesting of <code>switch</code> is permitted</li>
+</ul>
+<hr />
+<h2 id="break-goto-and-continue">break, goto, and continue</h2>
+<ul>
+<li><code>break</code> and <code>goto</code> keywords are used for <strong>jumping out of a loop</strong>, accomplishing an early exit</li>
+<li>Whereas <code>continue</code> keyword is used for <strong>skipping a part of a loop</strong></li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">while </span><span>(</span><span style="color:#d08770;">1</span><span>) { </span><span style="color:#65737e;">// infinite while loop
+</span><span>    </span><span style="color:#65737e;">// continue keyword will transfer the control here
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(---) {
+</span><span>        </span><span style="color:#b48ead;">if </span><span>(---) {
+</span><span>            </span><span style="color:#65737e;">// breaks the current loop and executes
+</span><span>            </span><span style="color:#65737e;">// statements under the statement block
+</span><span>            </span><span style="color:#b48ead;">goto</span><span> situation;
+</span><span>        } </span><span style="color:#b48ead;">else if </span><span>(---) {
+</span><span>            </span><span style="color:#65737e;">// if the condition is true then
+</span><span>            </span><span style="color:#65737e;">// break the loop to transfer the 
+</span><span>            </span><span style="color:#65737e;">// control out of it
+</span><span>            </span><span style="color:#b48ead;">break</span><span>;
+</span><span>        } </span><span style="color:#b48ead;">else if </span><span>(---) {
+</span><span>            </span><span style="color:#65737e;">// if the condition is true then
+</span><span>            </span><span style="color:#65737e;">// skip all other remaining part of the loop
+</span><span>            </span><span style="color:#65737e;">// and transfer the control at the start of 
+</span><span>            </span><span style="color:#65737e;">// the loop again
+</span><span>            </span><span style="color:#b48ead;">continue</span><span>;
+</span><span>        }
+</span><span>
+</span><span>        </span><span style="color:#65737e;">// continue will skip all these statements in the loop
+</span><span>        ---
+</span><span>        ---
+</span><span>    }
+</span><span>    </span><span style="color:#65737e;">// break keyword will transfer the control here
+</span><span>}
+</span><span>
+</span><span style="color:#65737e;">// goto keyword will transfer the control here
+</span><span>situation:
+</span><span>    </span><span style="color:#65737e;">// statements
+</span></code></pre>
+<ul>
+<li>When the <code>break</code> statement is encountered inside a loop, the loop is immediately exited and the program continues with the statement immediately following the loop</li>
+<li><code>break</code> only exits from one loop</li>
+<li><code>goto</code> requires a label in order to identify the place where the branch is to be made</li>
+<li>Unlike <code>break</code> which causes the loop to be terminated, the <code>continue</code>, causes the loop to be continued with the next iteration after skipping any statements in between</li>
+<li><em>It is always good practice to avoid <code>goto</code>, as it affects efficiency, complications, and readability</em></li>
+<li>One can also use the <code>exit()</code> function instead of <code>break</code> for exiting out of the loop, along with the inclusion of <code>&lt;stdlib.h&gt;</code></li>
+<li>The use of <code>break</code> and <code>continue</code> statements in any of the loops is considered <em>unstructured programming</em></li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">1</span><span>; i &lt; </span><span style="color:#d08770;">10</span><span>; ++i) {
+</span><span>    </span><span style="color:#b48ead;">if </span><span>(i == </span><span style="color:#d08770;">3</span><span>)
+</span><span>        </span><span style="color:#b48ead;">continue</span><span>;
+</span><span>    </span><span style="color:#b48ead;">if </span><span>(i == </span><span style="color:#d08770;">7</span><span>)
+</span><span>        </span><span style="color:#b48ead;">break</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#d08770;">%d </span><span>&quot;, i);
+</span><span>}
+</span></code></pre>
+<p>output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">1</span><span> 2 4 5 6
+</span></code></pre>
+<p>When <code>i</code> is equal to <code>3</code>, the <code>continue</code> statement comes into effect and skips <code>3</code>. When <code>i</code> is equal to <code>7</code>, the <code>break</code> statement comes into effect and terminates the <code>for</code> loop</p>
+<hr />
+<h2 id="while">while</h2>
+<ul>
+<li>Simplest and easy-to-understand loop statement</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">while </span><span>(test condition) {
+</span><span>    </span><span style="color:#65737e;">// body of the loop
+</span><span>}
+</span></code></pre>
+<ul>
+<li>The while is an entry-controlled loop statement</li>
+<li>The test condition is evaluated and if the condition is <code>true</code>, then the body of the loop is executed</li>
+<li>This flow continues until land unless the test condition becomes <code>false</code>, and control is transferred out of the loop</li>
+<li>Can be used for <strong>infinite execution of a program</strong></li>
+</ul>
+<hr />
+<h2 id="do">do</h2>
+<ul>
+<li>On some occasions, it might be necessary to execute the body of the loop before the test is performed</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">do </span><span>{
+</span><span>    </span><span style="color:#65737e;">// body of the loop
+</span><span>} </span><span style="color:#b48ead;">while </span><span>(test condition);
+</span></code></pre>
+<ul>
+<li>On reaching the <code>do</code> statement, the program proceeds to evaluate the body of the loop first. At the end of the loop, the test condition in the <code>while</code> statement is evaluated</li>
+<li>If the condition is <code>true</code>, the program continues to evaluate the body of the loop once again. This process continues as long as the condition is <code>true</code>.</li>
+<li>When the condition becomes <code>false</code>, the loop will be terminated and the control goes to the statement that appears immediately after the <code>while</code> statement.</li>
+<li>Since the test condition is evaluated at the bottom of the loop, the <code>do...while</code> construct provides an exit-controlled loop, and therefore the body of the loop is always executed at least once.</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">do </span><span>{
+</span><span>    </span><span style="color:#96b5b4;">printf</span><span>(&quot;</span><span style="color:#a3be8c;">Input a number</span><span style="color:#96b5b4;">\n</span><span>&quot;);
+</span><span>    number = </span><span style="color:#bf616a;">getnum</span><span>();
+</span><span>} </span><span style="color:#b48ead;">while </span><span>(number &gt; </span><span style="color:#d08770;">0</span><span>);
+</span></code></pre>
+<hr />
+<h2 id="for">for</h2>
+<ul>
+<li>Entry controlled loop that provides a more concise loop control structure</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">for </span><span>(initialization; test-condition; increment) {
+</span><span>    </span><span style="color:#65737e;">// body of the loop
+</span><span>}
+</span></code></pre>
+<ul>
+<li>Initialization of the control variables is done first, using assignment statements such as <code>i = 1</code> and <code>count = 0</code>, the variables <code>i</code> and <code>count</code> are known as loop control variables</li>
+<li>The value of the control variable is tested using the test condition. the test condition is a relational expression, such as <code>i &lt; 10</code> that determines when the loop will exit.</li>
+<li>If the condition is <code>true</code>, the loop's body is executed; otherwise, the loop is terminated and the execution continues with the statement that immediately follows the loop</li>
+<li>When the loop body is executed, the control is transferred back to the <code>for</code> statement after evaluating the last statement in the loop.</li>
+<li>Now, the control variable is incremented using an assignment statement such as <code>i = i + 1</code>, and the new value of the control variable is again tested to see whether it satisfies the loop condition, if the condition is satisfied, the body of the loop is again executed. This process continues till the value of the control variable fails to satisfy the test condition.</li>
+</ul>
+<p>Additional features</p>
+<ul>
+<li>More than one variable can be initialized</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> p = </span><span style="color:#d08770;">1</span><span>, n = </span><span style="color:#d08770;">0</span><span>; n &lt; </span><span style="color:#d08770;">17</span><span>; ++n) {
+</span><span>    </span><span style="color:#65737e;">// block statement
+</span><span>}
+</span></code></pre>
+<ul>
+<li>Infinite <code>for</code> loop</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span>    </span><span style="color:#b48ead;">for </span><span>(; ; ) {
+</span><span>        </span><span style="color:#65737e;">// block
+</span><span>    }
+</span></code></pre>
+<ul>
+<li>Nested <code>for</code> loops</li>
+</ul>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">0</span><span>; i &lt; rows; ++i) {
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> j = </span><span style="color:#d08770;">0</span><span>; j &lt; columns; ++j) {
+</span><span>        </span><span style="color:#65737e;">// block
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<hr />
+
+	</div>
+	<hr class="post-end">
+	<footer class="post-info">
+    
+	  <p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+		
+		
+		<span class="tag"><a href="https://hexavik.github.io/tags/c/">c</a></span>
+		
+		<span class="tag"><a href="https://hexavik.github.io/tags/cprogramming/">cprogramming</a></span>
+		
+		<span class="tag"><a href="https://hexavik.github.io/tags/structures/">structures</a></span>
+		
+		<span class="tag"><a href="https://hexavik.github.io/tags/datastructures/">datastructures</a></span>
+		
+		
+    </p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>4161 Words</p>
+    
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-07-04</p>
+    
+	</footer>
+  </article>
+    
+    <aside id="toc">
+        <div id="TableOfContents">
+            <div class="toc-title">Table of content</div>
+            <ul>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#fundamental-datatypes">Fundamental Datatypes</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#type-modifiers-qualifiers-and-size">Type Modifiers, Qualifiers, and Size</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#basic-collections">Basic Collections</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#user-defined-declarations">User-defined declarations</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#fucntion-return">Fucntion Return</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#storage-class-specifiers">Storage class specifiers</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#conditional-blocks">Conditional blocks</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#jumps">Jumps</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#loops">Loops</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#void">void</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#char">char</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#int">int</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#float">float</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#double">double</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#short-long-signed-and-unsigned">short, long, signed, and unsigned</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#struct">struct</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#union">union</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#enum">enum</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#typedef">typedef</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#return">return</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#sizeof">sizeof</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#auto">auto</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#static">static</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#extern">extern</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#register">register</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#const">const</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#volatile">volatile</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#if-and-else">if and else</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#switch-case-and-default">switch, case, and default</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#break-goto-and-continue">break, goto, and continue</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#while">while</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#do">do</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="https://hexavik.github.io/posts/keywords-in-c-programming/#for">for</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </aside>
+    
+  
+  <div class="post-nav thin">
+	
+	
+  </div>
+
+  
+    <div id="disqus_thread" class="thin"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var disqus_config = function () {
+                this.page.url = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;keywords-in-c-programming&#x2F;";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;keywords-in-c-programming&#x2F;"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            var d = document, s = d.createElement('script');
+            s.src = 'https://my-supa-dupa-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</main>
+
+	  </div>
+	  
+	  
+
+
+
+<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+  <p>&copy; 2023 <a href="https:&#x2F;&#x2F;hexavik.github.io">Vikrant A. P.</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+  <p>Made with <a href="https://www.getzola.org" target="_blank" rel="noopener">Zola</a> &#183; Theme <a href="https://github.com/VersBinarii/hermit_zola" target="_blank" rel="noopener">Hermit_Zola</a>
+	
+	&#183; <a href="https://hexavik.github.io/rss.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+	
+  </p>
+</footer>
+
+
+
+
+	</div>
+	
+	<script src="https://hexavik.github.io/js/main.js"></script>
+
+	<!-- Math rendering -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, { delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\[', right: '\\]', display: true}, {left: '\\(', right: '\\)', display: false}]});"></script>
+
+    
+
+	
+	<script src="https://hexavik.github.io/js/copy.js"></script>
+	
+	<script src="https://hexavik.github.io/js/main.js"></script>
+
+    
+    
+
+	
+  </body>
+</html>
