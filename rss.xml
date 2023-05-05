@@ -1964,6 +1964,105 @@
 </description>
       </item>
       <item>
+          <title>8 Data Structures every programmer must know</title>
+          <pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://hexavik.github.io/posts/8-data-structures-every-programmer-must-know/</link>
+          <guid>https://hexavik.github.io/posts/8-data-structures-every-programmer-must-know/</guid>
+          <description>&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;cdn.hashnode.com&#x2F;res&#x2F;hashnode&#x2F;image&#x2F;upload&#x2F;v1655056077733&#x2F;eGYPEkI38.jpg?w=1600&amp;amp;h=840&amp;amp;fit=crop&amp;amp;crop=entropy&amp;amp;auto=compress,format&amp;amp;format=webp&quot; alt=&quot;Banner&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Algorithms&lt;&#x2F;strong&gt; and &lt;strong&gt;data structures&lt;&#x2F;strong&gt; are one of the most important key skills for every programmer. Knowing about them is not enough, but being good at them can give a good leap in a programmer&#x27;s productivity and career.&lt;&#x2F;p&gt;
+&lt;p&gt;There are plenty of resources are available on data structures, but here we shall explore them in a simplified way. Before that, one must know a little more about data structures.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-a-data-structure&quot;&gt;What is a Data Structure?&lt;&#x2F;h2&gt;
+&lt;p&gt;Imagine, if you want to organize things at home, so that you can find them or use them quickly, you follow some methods to arrange them, like stacking them according to colors, or arranging them with some labels, etc., in the same way, data structures are methods of organizing and storing data in a computer system so that operations can be performed more efficiently.&lt;br &#x2F;&gt;
+As there are different types and forms of data, data structures also take the form of different layouts, each of which can be efficient for some operations and inefficient for others. To solve the problem more effectively and efficiently, the programmer has to decide which data structure is suitable for a given set of data.&lt;&#x2F;p&gt;
+&lt;p&gt;I have explained each data structure quickly in the following template&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;data structure name
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; definition &amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; structure &amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; allocation type - static or dynamic, homogenous or heterogeneous &amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; example &amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; insertion &#x2F; access &#x2F; deletion &#x2F; traversal criteria &amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt; usecase &amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;1-array&quot;&gt;1. Array&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Array is the collection of similar data stored sequentially.&lt;&#x2F;li&gt;
+&lt;li&gt;Stored in contiguous memory locations linearly, the items stored inside the array are called elements.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and static, once initialized, their size remains the same.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of an array is the weekly medication box, which consists of small containers indicating memory blocks or array indices, whereas medicines stored inside it indicate elements.&lt;&#x2F;li&gt;
+&lt;li&gt;Can be accessed sequentially or randomly by its index value, the initial element of the array always has an index of 0 (zero).&lt;&#x2F;li&gt;
+&lt;li&gt;Cannot reduce or expand the array size by deletion or addition of elements respectively.&lt;&#x2F;li&gt;
+&lt;li&gt;Generally used for building complex data structures and sorting algorithms.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;2-stack&quot;&gt;2. Stack&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stack is an ordered list of data that stacks elements inside a container.&lt;&#x2F;li&gt;
+&lt;li&gt;Stored in Last-in-First-out (LIFO) structure, where the last element removed first which is called top.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and dynamic, size can be increased or decreased according to the data dynamically.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a stack is the pile of plates, where we add plates one over the other and can only remove the plate at the top.&lt;&#x2F;li&gt;
+&lt;li&gt;Adding a new element (insertion) called &lt;code&gt;push&lt;&#x2F;code&gt; and removing the top element (deletion) called &lt;code&gt;pop&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Commonly used for parsing and evaluating mathematical expressions, to implement function calls in recursion programming, also in undo-redo operation.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;3-queue&quot;&gt;3. Queue&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Queue is an ordered list of data in which arrange elements inside a container sequentially.&lt;&#x2F;li&gt;
+&lt;li&gt;Stored in First-in-First-out (FIFO) structure, where the first element removed first.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and dynamic, size can be increased or decreased according to the data dynamically.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a queue is a line of people waiting to enter a bus, where the person at the beginning of the line will enter first while the person at the end will enter last.&lt;&#x2F;li&gt;
+&lt;li&gt;Adding a new element at the end (insertion) called &lt;code&gt;enqueue&lt;&#x2F;code&gt; and removing the element at the beginning (deletion) called &lt;code&gt;dequeue&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Often used to manage threads in multithreading, and used to implement priority queuing systems, like printer spool.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;4-linked-list&quot;&gt;4. Linked List&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linked list is a sequence of data arranged in a linear order, and stores data in nodes that are connected to each other.&lt;&#x2F;li&gt;
+&lt;li&gt;Node contains the data &lt;code&gt;(key)&lt;&#x2F;code&gt; and the reference to the next node to it &lt;code&gt;(pointer)&lt;&#x2F;code&gt;, this pointer is also called &lt;code&gt;next&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and dynamic, size depends on insertion or deletion of nodes, but cannot be accessed randomly.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a linked list is the train, where the engine is connected to the next car, and it always has to start from the engine, if you want to remove a car, you have to identify the car and then detach the car from the cars both ahead and behind it.&lt;&#x2F;li&gt;
+&lt;li&gt;The first node of a linked list is always called &lt;code&gt;head&lt;&#x2F;code&gt;, whereas the last node is called &lt;code&gt;tail&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The direction of access of any node is always from &lt;code&gt;head&lt;&#x2F;code&gt; to &lt;code&gt;tail&lt;&#x2F;code&gt;. Doubly linked list can be accessed in both directions.&lt;&#x2F;li&gt;
+&lt;li&gt;Circular linked list is another type in which the &lt;code&gt;head&lt;&#x2F;code&gt; and &lt;code&gt;tail&lt;&#x2F;code&gt; are connected to each other.&lt;&#x2F;li&gt;
+&lt;li&gt;Used for the symbol table management in switching between program windows in operating systems by pressing &lt;code&gt;alt+tab&lt;&#x2F;code&gt;, forward-backward functionality in the browser.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;5-tree&quot;&gt;5. Tree&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Tree is an advanced version of a linked list where nodes are linked to another in a tree-like structure (root at the top and leaves are at the bottom).&lt;&#x2F;li&gt;
+&lt;li&gt;Nodes are arranged in a hierarchical structure, like a family tree or organization tree.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and dynamic, size is totally dependent on insertion and deletion of nodes, but cannot be accessed randomly.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a tree is itself, to reach the particular leaf we have to start from the root and to its adjacent and respective branch and sub-branch.&lt;&#x2F;li&gt;
+&lt;li&gt;The first node of a tree is always called &lt;code&gt;root&lt;&#x2F;code&gt; and nodes can be denoted as &lt;code&gt;node&lt;&#x2F;code&gt;, the &lt;code&gt;node&lt;&#x2F;code&gt; under the other &lt;code&gt;node&lt;&#x2F;code&gt; is called &lt;code&gt;child node&lt;&#x2F;code&gt;. Each node consists of a value &lt;code&gt;(key)&lt;&#x2F;code&gt;, a pointer to the left child node &lt;code&gt;(left)&lt;&#x2F;code&gt;, a pointer to the right child node &lt;code&gt;(right)&lt;&#x2F;code&gt;, and a pointer to the parent node &lt;code&gt;(p)&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Binary Search Trees (BST) are one of the applications used for different types of search applications, especially used for searching files in the directory structure, or in wireless networking.&lt;&#x2F;li&gt;
+&lt;li&gt;Tree is also used for developing chess algorithms to store the possible moves.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;6-graph&quot;&gt;6. Graph&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Graph is a network of interconnected items.&lt;&#x2F;li&gt;
+&lt;li&gt;It is abstract, non-linear made of a finite set of nodes that are connected to each other.&lt;&#x2F;li&gt;
+&lt;li&gt;Homogeneous and dynamic, size is dependent on a finite set of nodes&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a graph is google map where each location is considered as edges and to find the shortest path between these nodes, graph algorithms are used.&lt;&#x2F;li&gt;
+&lt;li&gt;Each node is called &lt;code&gt;vertex&lt;&#x2F;code&gt; and the connection between the nodes is called &lt;code&gt;edge&lt;&#x2F;code&gt;, nodes are predefined along with their edges.&lt;&#x2F;li&gt;
+&lt;li&gt;Often used to represent networks such as paths in a city, they are also used in social media to represent each node as a person&#x27;s profile and their connection to the other profiles or nodes.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;7-hash-table&quot;&gt;7. Hash Table&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash table is a tabular two-column based like structure, in which the first column entry know as &lt;code&gt;key&lt;&#x2F;code&gt; and the second column entry known as &lt;code&gt;value&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Structure associates each value with a key and then stores them, this makes it easy to look up values efficiently using a key.&lt;&#x2F;li&gt;
+&lt;li&gt;Heterogeneous and dynamic, size depends on total entries of key and value pair.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a hash table is college students&#x27; record, where each student is identified by the unique ID number, and by accessing the ID number can give the information about the respective student.&lt;&#x2F;li&gt;
+&lt;li&gt;Uses &lt;code&gt;hash function&lt;&#x2F;code&gt; to map a data set of any size to one of a fixed size table. Values are returned by &lt;code&gt;hash function&lt;&#x2F;code&gt; are known as &lt;code&gt;hash values&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Often used to store a set of fixed keywords that are referenced very frequently, to create databases indices, to create associative arrays to store some real-time data, to social media feeds section.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;8-heap&quot;&gt;8. Heap&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Heap is a type of binary tree, which can also be represented as binary arrays.&lt;&#x2F;li&gt;
+&lt;li&gt;In a heap, parent nodes are compared to their children, this allows the values within the nodes to be arranged accordingly.&lt;&#x2F;li&gt;
+&lt;li&gt;Same as tree, homogeneous and dynamic.&lt;&#x2F;li&gt;
+&lt;li&gt;Best example of a heap is the tree whose parent leaves that are greener than the child leaves, or vice versa, where the green color is the node value.&lt;&#x2F;li&gt;
+&lt;li&gt;There are two types of heaps. In a &lt;code&gt;min heap&lt;&#x2F;code&gt;, the parent&#x27;s key is less than or equal to the keys of its children, In a &lt;code&gt;max heap&lt;&#x2F;code&gt;, the parent&#x27;s key is greater than or equal to the keys of its children.&lt;&#x2F;li&gt;
+&lt;li&gt;Often used in algorithms used to create priority queues, and find the smallest or largest value in an array for sorting algorithms, and implement Dijkstra&#x27;s algorithm.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
           <title>Test code syntax highlight</title>
           <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
           <author>Unknown</author>
