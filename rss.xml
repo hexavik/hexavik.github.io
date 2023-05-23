@@ -1115,7 +1115,7 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%f&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, num);
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;34.671539
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;34&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;671539
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;double&quot;&gt;double&lt;&#x2F;h2&gt;
@@ -1131,8 +1131,8 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%.12lf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, extNum); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; force to print value for 12 decimal places
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1467.798754
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1476.798754302200
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1467&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;798754
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1476&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;798754302200
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;short-long-signed-and-unsigned&quot;&gt;short, long, signed, and unsigned&lt;&#x2F;h2&gt;
@@ -1229,8 +1229,8 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Size&lt;&#x2F;span&gt;&lt;span&gt; of Structure: 44
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Size&lt;&#x2F;span&gt;&lt;span&gt; of Union: 20
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;Size of Structure: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;44
+&lt;&#x2F;span&gt;&lt;span&gt;Size of Union: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;The detailed guide on Unions shall be uploaded along with structures, I shall update the link here&lt;&#x2F;li&gt;
@@ -1264,7 +1264,7 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;day: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, day);
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;day:&lt;&#x2F;span&gt;&lt;span&gt; 2
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;day: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;After defining &lt;code&gt;enum&lt;&#x2F;code&gt; we can declare the variables of this new datatype&lt;&#x2F;li&gt;
@@ -1287,7 +1287,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;it&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;s the weekend!
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;it&amp;#39;s the weekend!
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;However, values can be assigned manually to the enumeration constants&lt;&#x2F;li&gt;
@@ -1305,7 +1305,7 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Day: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, sunday);
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Day:&lt;&#x2F;span&gt;&lt;span&gt; 0
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;Day: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;The definition and declaration of variables can be combined into one statement&lt;&#x2F;li&gt;
@@ -1405,9 +1405,9 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; bytes
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt; bytes
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt; bytes
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; bytes
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt; bytes
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt; bytes
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;auto&quot;&gt;auto&lt;&#x2F;h2&gt;
@@ -1445,7 +1445,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 22047 (garbage value)
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;22047 &lt;&#x2F;span&gt;&lt;span&gt;(garbage value)
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;static&quot;&gt;static&lt;&#x2F;h2&gt;
@@ -1471,7 +1471,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 0
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;A local variable with &lt;code&gt;static&lt;&#x2F;code&gt; keyword exists and retains its value even after the control is transferred to the calling function&lt;&#x2F;li&gt;
@@ -1492,7 +1492,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; 2
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1 2
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;static&lt;&#x2F;code&gt; keyword can also be assigned to the user-defined functions, to limit their access within the file, as functions are by default global&lt;&#x2F;li&gt;
@@ -1539,7 +1539,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;undefined&lt;&#x2F;span&gt;&lt;span&gt; reference to `&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;undefined reference to `x&amp;#39;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;stdio.h&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
@@ -1554,7 +1554,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 45
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;As an exception, declaring an &lt;code&gt;extern&lt;&#x2F;code&gt; variable with initialization is permitted, yet it throws a warning and is not recommended&lt;&#x2F;li&gt;
@@ -1569,10 +1569,10 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;warning:&lt;&#x2F;span&gt;&lt;span&gt; ‘x’ initialized and declared ‘extern’
-&lt;&#x2F;span&gt;&lt;span&gt; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;extern&lt;&#x2F;span&gt;&lt;span&gt; int x = 45;
-&lt;&#x2F;span&gt;&lt;span&gt; |            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;^
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 45
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;warning: ‘x’ initialized and declared ‘extern’
+&lt;&#x2F;span&gt;&lt;span&gt; | extern int x = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt; |            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^
+&lt;&#x2F;span&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Declaring &lt;code&gt;extern&lt;&#x2F;code&gt; keyword without defining, accessing, or initializing it also works fine&lt;&#x2F;li&gt;
@@ -1587,7 +1587,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Hello&lt;&#x2F;span&gt;&lt;span&gt; World!
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;Hello World!
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Since the functions are global by default, the use of extern keyword for functions doesn&#x27;t needed&lt;&#x2F;li&gt;
@@ -1608,27 +1608,27 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 10
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Using &lt;code&gt;time&lt;&#x2F;code&gt; command in Linux for the programs without and with register variable shows the difference between execution time&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;without&lt;&#x2F;span&gt;&lt;span&gt; register keyword
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; time .&#x2F;test_register_variable
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 10
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;without &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;register&lt;&#x2F;span&gt;&lt;span&gt; keyword
+&lt;&#x2F;span&gt;&lt;span&gt;$ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;time&lt;&#x2F;span&gt;&lt;span&gt; .&#x2F;test_register_variable
+&lt;&#x2F;span&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;real&lt;&#x2F;span&gt;&lt;span&gt;    0m0.001s
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;user&lt;&#x2F;span&gt;&lt;span&gt;    0m0.002s
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sys&lt;&#x2F;span&gt;&lt;span&gt;     0m0.000s
+&lt;&#x2F;span&gt;&lt;span&gt;real    0m0.001s
+&lt;&#x2F;span&gt;&lt;span&gt;user    0m0.002s
+&lt;&#x2F;span&gt;&lt;span&gt;sys     0m0.000s
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;with&lt;&#x2F;span&gt;&lt;span&gt; register keyword
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span&gt; time .&#x2F;test_register_variable
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;x:&lt;&#x2F;span&gt;&lt;span&gt; 10
+&lt;&#x2F;span&gt;&lt;span&gt;with &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;register&lt;&#x2F;span&gt;&lt;span&gt; keyword
+&lt;&#x2F;span&gt;&lt;span&gt;$ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;time&lt;&#x2F;span&gt;&lt;span&gt; .&#x2F;test_register_variable
+&lt;&#x2F;span&gt;&lt;span&gt;x: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;real&lt;&#x2F;span&gt;&lt;span&gt;    0m0.001s
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;user&lt;&#x2F;span&gt;&lt;span&gt;    0m0.001s
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sys&lt;&#x2F;span&gt;&lt;span&gt;     0m0.000s
+&lt;&#x2F;span&gt;&lt;span&gt;real    0m0.001s
+&lt;&#x2F;span&gt;&lt;span&gt;user    0m0.001s
+&lt;&#x2F;span&gt;&lt;span&gt;sys     0m0.000s
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Register variables cannot be declared globally&lt;&#x2F;li&gt;
@@ -1642,7 +1642,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;error:&lt;&#x2F;span&gt;&lt;span&gt; register name not specified for ‘x’
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;error: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;register&lt;&#x2F;span&gt;&lt;span&gt; name not specified &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; ‘x’
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Register variables are initialized to a garbage value by default&lt;&#x2F;li&gt;
@@ -1670,7 +1670,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;error:&lt;&#x2F;span&gt;&lt;span&gt; assignment of read-only variable ‘a’
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;error: assignment of read-only variable ‘a’
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Assigned value &lt;code&gt;0&lt;&#x2F;code&gt; (zero) as default if not initialized manually at the time of declaration&lt;&#x2F;li&gt;
@@ -1684,7 +1684,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;a:&lt;&#x2F;span&gt;&lt;span&gt; 0
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;a: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;However, the pointing value can be modified and assigned to a constant pointer&lt;&#x2F;li&gt;
@@ -1702,8 +1702,8 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*ptr:&lt;&#x2F;span&gt;&lt;span&gt; 10
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*ptr:&lt;&#x2F;span&gt;&lt;span&gt; 11
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;*ptr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10
+&lt;&#x2F;span&gt;&lt;span&gt;*ptr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;In the case of pointer to constant works little different&lt;&#x2F;li&gt;
@@ -1723,8 +1723,8 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*ptr:&lt;&#x2F;span&gt;&lt;span&gt; 20
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*ptr:&lt;&#x2F;span&gt;&lt;span&gt; 21
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;*ptr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20
+&lt;&#x2F;span&gt;&lt;span&gt;*ptr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;21
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;hr &#x2F;&gt;
 &lt;h2 id=&quot;volatile&quot;&gt;volatile&lt;&#x2F;h2&gt;
@@ -1764,7 +1764,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;If the value of &lt;code&gt;i&lt;&#x2F;code&gt; is other than 1, the output will be:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;i&lt;&#x2F;span&gt;&lt;span&gt; is not 1
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span&gt;i is not &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1882,7 +1882,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;output:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; 2 4 5 6
+&lt;pre data-lang=&quot;bat&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bat &quot;&gt;&lt;code class=&quot;language-bat&quot; data-lang=&quot;bat&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1 2 4 5 6
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When &lt;code&gt;i&lt;&#x2F;code&gt; is equal to &lt;code&gt;3&lt;&#x2F;code&gt;, the &lt;code&gt;continue&lt;&#x2F;code&gt; statement comes into effect and skips &lt;code&gt;3&lt;&#x2F;code&gt;. When &lt;code&gt;i&lt;&#x2F;code&gt; is equal to &lt;code&gt;7&lt;&#x2F;code&gt;, the &lt;code&gt;break&lt;&#x2F;code&gt; statement comes into effect and terminates the &lt;code&gt;for&lt;&#x2F;code&gt; loop&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
