@@ -7,7 +7,57 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://hexavik.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 24 May 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Understanding the difference between Registers and Memory in Computer Systems</title>
+          <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://hexavik.github.io/posts/register-vs-memory/</link>
+          <guid>https://hexavik.github.io/posts/register-vs-memory/</guid>
+          <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Registers&lt;&#x2F;strong&gt; and &lt;strong&gt;memory&lt;&#x2F;strong&gt; are two fundamental components of computer systems. While they both play a crucial role in storing data, they have distinct characteristics and serve different purposes. In this post, we&#x27;ll explore the differences between registers and memory in a friendly and easily understandable way.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;registers-the-speedy-messengers-rocket&quot;&gt;Registers: The Speedy Messengers 🚀&lt;&#x2F;h2&gt;
+&lt;p&gt;Think of registers as the swift messengers within a computer system.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;They are small, high-speed storage units located directly in the CPU.&lt;&#x2F;li&gt;
+&lt;li&gt;Registers can hold a limited amount of data, typically ranging from a few bits to a few bytes.&lt;&#x2F;li&gt;
+&lt;li&gt;Due to their proximity to the CPU, accessing registers is lightning-fast.&lt;&#x2F;li&gt;
+&lt;li&gt;Registers are primarily used for temporary storage of data during the execution of instructions.&lt;&#x2F;li&gt;
+&lt;li&gt;They act as the CPU&#x27;s working space, allowing it to quickly access and manipulate data required for immediate processing.&lt;&#x2F;li&gt;
+&lt;li&gt;Think of registers as a scratchpad where the CPU performs its calculations and keeps track of intermediate results.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;memory-the-reliable-vault-file-cabinet&quot;&gt;Memory: The Reliable Vault 🗄️&lt;&#x2F;h2&gt;
+&lt;p&gt;On the other hand, memory serves as the reliable vault of a computer system.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It provides a much larger storage capacity than registers, measured in gigabytes or even terabytes.&lt;&#x2F;li&gt;
+&lt;li&gt;Memory is typically located outside the CPU and is connected to it through buses.&lt;&#x2F;li&gt;
+&lt;li&gt;Unlike registers, memory is relatively slower to access. However, its capacity allows for long-term storage of data, even when the power is turned off.&lt;&#x2F;li&gt;
+&lt;li&gt;It acts as a repository for programs, data structures, variables, and other information needed by the system.&lt;&#x2F;li&gt;
+&lt;li&gt;Memory provides a stable and persistent storage solution for storing and retrieving data.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;key-differences&quot;&gt;Key Differences&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;1. Speed:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registers are lightning fast, offering the fastest data access in the system.&lt;&#x2F;li&gt;
+&lt;li&gt;In contrast, memory access is relatively slower due to the larger capacity and the need to traverse buses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;2. Capacity:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registers have limited capacity and can hold only a small amount of data.&lt;&#x2F;li&gt;
+&lt;li&gt;Memory, on the other hand, provides a significantly larger storage capacity for long-term data storage.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;3. Proximity:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registers are located within the CPU, ensuring quick access to data during instruction execution.&lt;&#x2F;li&gt;
+&lt;li&gt;Memory is located outside the CPU and requires additional time for data retrieval.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;4. Persistence:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data stored in registers is temporary and gets erased after its usage.&lt;&#x2F;li&gt;
+&lt;li&gt;Memory, however, retains data even when the power is turned off, allowing for long-term storage.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
       <item>
           <title>How to write efficient firmware code</title>
           <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
