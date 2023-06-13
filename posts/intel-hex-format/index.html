@@ -24,7 +24,7 @@
   />
   <link rel="stylesheet" href="https://hexavik.github.io/style.css"/>
   
-  <title>Understanding the difference between Registers and Memory in Computer Systems</title>
+  <title>Intel HEX Format</title>
   
 
   
@@ -148,64 +148,59 @@
 	<header class="post-header">
 	  <div class="post-meta">
 		
-		<span>May 24, 2023</span>
+		<span>Jun 10, 2023</span>
 		<small> - 
 <span class="reading-time" title="Estimated read time">
   
-  1 min read
+  3 min read
   
 </span>
 </small>
 		
             
 	  </div>
-	  <h1>Understanding the difference between Registers and Memory in Computer Systems</h1>
+	  <h1>Intel HEX Format</h1>
 	</header>
 
 	<div class="content">
         
-	  <h2 id="introduction">Introduction</h2>
-<p><strong>Registers</strong> and <strong>memory</strong> are two fundamental components of computer systems. While they both play a crucial role in storing data, they have distinct characteristics and serve different purposes. In this post, we'll explore the differences between registers and memory in a friendly and easily understandable way.</p>
-<h2 id="registers-the-speedy-messengers-rocket">Registers: The Speedy Messengers 🚀</h2>
-<p>Think of registers as the swift messengers within a computer system.</p>
+	  <p>Intel HEX consists of lines of ASCII text separated by a line feed, carriage return characters, or both. Each text line contains hexadecimal characters that encode multiple binary numbers. The binary numbers may represent data, memory addresses, or other values, depending on their position in the line, and the type and length of the line.</p>
+<h2 id="file-records">File Records</h2>
+<p>A record is a line of text that consists of six fields. Each field contains a character and multiple digits in the following order, from left to right:</p>
+<table><thead><tr><th style="text-align: center"><div style="width:100px">Field    </div></th><th style="text-align: left">Description</th></tr></thead><tbody>
+<tr><td style="text-align: center">Field 1.</td><td style="text-align: left">Start Code - one character<br />This character is an ASCII colon (<code>:</code>).</td></tr>
+<tr><td style="text-align: center">Field 2.</td><td style="text-align: left">Byte Count - two hexadecimal digits<br />These two digits indicate the data field's number of bytes (HEX digit pairs). The maximum byte count is 255 (<code>0xFF</code>).<br />For example, 16 (0x10) and 32 (0x20) byte counts are commonly used.</td></tr>
+<tr><td style="text-align: center">Field 3.</td><td style="text-align: left">Address - four hexadecimal digits<br />These four digits represent the 16-bit beginning memory address offset of the data.<br />The physical address of the data is computed by adding this offset to a previously established base address. This provides memory addressing beyond the 64KB limit of 16-bit addresses. The base address, which defaults to zero, can be changed by various types of records.<br />Base addresses and address offsets are always expressed as big-endian values.</td></tr>
+<tr><td style="text-align: center">Field 4.</td><td style="text-align: left">Record Type - two hexadecimal digits, 00 to 05<br />These two digits define the meaning of the data field. For SQTP, only three types are used; 00, 01, and 04.<br />00 - Normal Data<br />01 - End of File<br />04 - Extended Linear Address</td></tr>
+<tr><td style="text-align: center">Field 5.</td><td style="text-align: left">Data - a sequence of n bytes of data<br />Data is represented by 2n hexadecimal digits. Some records omit this field (n equals zero).<br />The meaning and interpretation of the data types depend on the application.</td></tr>
+<tr><td style="text-align: center">Field 6.</td><td style="text-align: left">Checksum - two hexadecimal digits<br />These two digits represent a computed value that is used to verify the record has no errors by ensuring the summation of each of the bytes in the line adds up to zero. See the &quot;<a href="https://hexavik.github.io/posts/intel-hex-format/#calculating-the-checksum">Calculating the Checksum&quot;</a> section.</td></tr>
+</tbody></table>
+<h2 id="calculating-the-checksum">Calculating the Checksum</h2>
+<p>As mentioned in the format table above, the last two characters represent a checksum of the data in the line. Since the checksum is a two-digit hexadecimal value, it may represent a value of 0 to 255, inclusive.</p>
+<p>The checksum is calculated by summing the value of the data on the line, excluding the leading colon and checksum byte itself, and taking its two's complement. For example, consider the line:</p>
+<p><span style="background-color: #ffffcc; color: #494f5c"><strong>:</strong></span>
+<span style="background-color: #ccffcc; color: #494f5c"><strong>03</strong></span>
+<span style="background-color: #ccccff; color: #494f5c"><strong>00300</strong></span>
+<span style="background-color: #ffcccc; color: #494f5c"><strong>00</strong></span>
+<span style="background-color: #ccffff; color: #494f5c"><strong>02337A</strong></span>
+<span style="background-color: #cccccc; color: #494f5c"><strong>1E</strong></span></p>
+<p>Breaking this line into its components:</p>
 <ul>
-<li>They are small, high-speed storage units located directly in the CPU.</li>
-<li>Registers can hold a limited amount of data, typically ranging from a few bits to a few bytes.</li>
-<li>Due to their proximity to the CPU, accessing registers is lightning-fast.</li>
-<li>Registers are primarily used for temporary storage of data during the execution of instructions.</li>
-<li>They act as the CPU's working space, allowing it to quickly access and manipulate data required for immediate processing.</li>
-<li>Think of registers as a scratchpad where the CPU performs its calculations and keeps track of intermediate results.</li>
+<li>Start Code: <code>:</code></li>
+<li>Record Length: <code>03</code> (3 bytes of data)</li>
+<li>Address: <code>0030</code> (the 3 bytes will be stored at <code>0030</code>, <code>0031</code>, and <code>0032</code>)</li>
+<li>Record Type: <code>00</code> (normal data)</li>
+<li>Data: <code>02</code>, <code>33</code>, <code>7A</code></li>
+<li>Checksum: <code>1E</code></li>
 </ul>
-<h2 id="memory-the-reliable-vault-file-cabinet">Memory: The Reliable Vault 🗄️</h2>
-<p>On the other hand, memory serves as the reliable vault of a computer system.</p>
-<ul>
-<li>It provides a much larger storage capacity than registers, measured in gigabytes or even terabytes.</li>
-<li>Memory is typically located outside the CPU and is connected to it through buses.</li>
-<li>Unlike registers, memory is relatively slower to access. However, its capacity allows for long-term storage of data, even when the power is turned off.</li>
-<li>It acts as a repository for programs, data structures, variables, and other information needed by the system.</li>
-<li>Memory provides a stable and persistent storage solution for storing and retrieving data.</li>
-</ul>
-<h2 id="key-differences">Key Differences</h2>
-<p><strong>1. Speed:</strong></p>
-<ul>
-<li>Registers are lightning fast, offering the fastest data access in the system.</li>
-<li>In contrast, memory access is relatively slower due to the larger capacity and the need to traverse buses.</li>
-</ul>
-<p><strong>2. Capacity:</strong></p>
-<ul>
-<li>Registers have limited capacity and can hold only a small amount of data.</li>
-<li>Memory, on the other hand, provides a significantly larger storage capacity for long-term data storage.</li>
-</ul>
-<p><strong>3. Proximity:</strong></p>
-<ul>
-<li>Registers are located within the CPU, ensuring quick access to data during instruction execution.</li>
-<li>Memory is located outside the CPU and requires additional time for data retrieval.</li>
-</ul>
-<p><strong>4. Persistence:</strong></p>
-<ul>
-<li>Data stored in registers is temporary and gets erased after its usage.</li>
-<li>Memory, however, retains data even when the power is turned off, allowing for long-term storage.</li>
-</ul>
+<p>Taking all the data bytes above, we have to calculate the checksum based on the following values:</p>
+<blockquote>
+<p>03 + 00 + 30 + 00 + 02 + 33 + 7A = E2</p>
+</blockquote>
+<p><em>The two's complement</em> of E2 is 1E which is, as you can see, the checksum value. <strong>The two's complement</strong> of a number is the value that must be added to the number to reach the value 256 (decimal). That is to say, E2 + 1E = 100.</p>
+<p>You may also calculate <em>the two's complement</em> by subtracting the value from 100h. In other words, 100h - E2h = 1Eh, which is the checksum.</p>
+<p>If the value in question is greater than FFh, simply take the part which is less than 100h.</p>
+<p>For example, if you want thw two's complement of the value 494h, simply drop the leading &quot;4&quot; which leaves you with 94h. <em>The two's complement</em> of 94h is 6Ch.</p>
 
 	</div>
 	<hr class="post-end">
@@ -215,22 +210,18 @@
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 		
 		
-		<span class="tag"><a href="https://hexavik.github.io/tags/memory/">memory</a></span>
+		<span class="tag"><a href="https://hexavik.github.io/tags/firmware/">firmware</a></span>
 		
 		<span class="tag"><a href="https://hexavik.github.io/tags/embeddedsystems/">embeddedsystems</a></span>
 		
-		<span class="tag"><a href="https://hexavik.github.io/tags/hardware/">hardware</a></span>
-		
-		<span class="tag"><a href="https://hexavik.github.io/tags/registers/">registers</a></span>
-		
-		<span class="tag"><a href="https://hexavik.github.io/tags/computer/">computer</a></span>
+		<span class="tag"><a href="https://hexavik.github.io/tags/microcontrollers/">microcontrollers</a></span>
 		
 		
     </p>
     
-    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>381 Words</p>
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>670 Words</p>
     
-    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2023-05-24</p>
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2023-06-10</p>
     
 	</footer>
   </article>
@@ -238,19 +229,10 @@
   
   <div class="post-nav thin">
 	
-	<a class="next-post" href="https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;intel-hex-format&#x2F;">
-	  <span class="post-nav-label">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
-		  <line x1="19" y1="12" x2="5" y2="12"></line>
-		  <polyline points="12 19 5 12 12 5"></polyline>
-		</svg>&nbsp;Newer</span><br>
-		<span>Intel HEX Format</span>
-	</a>
 	
-	
-	<a class="prev-post" href="https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;efficient-firmware-code-in-embedded-systems&#x2F;">
+	<a class="prev-post" href="https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;register-vs-memory&#x2F;">
 	  <span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br>
-	  <span>How to write efficient firmware code</span>
+	  <span>Understanding the difference between Registers and Memory in Computer Systems</span>
 	</a>
 	
   </div>
@@ -264,8 +246,8 @@
         
         (function() { // DON'T EDIT BELOW THIS LINE
             var disqus_config = function () {
-                this.page.url = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;register-vs-memory&#x2F;";  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;register-vs-memory&#x2F;"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.page.url = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;intel-hex-format&#x2F;";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "https:&#x2F;&#x2F;hexavik.github.io&#x2F;posts&#x2F;intel-hex-format&#x2F;"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             var d = document, s = d.createElement('script');
             s.src = 'https://hexavik-personal-blog.disqus.com/embed.js';
